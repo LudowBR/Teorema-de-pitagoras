@@ -1,0 +1,23 @@
+#Esse é o novo, com linhas a menos
+#O problema quando me da o valro da hipotenusa continua...
+
+import math
+cO = float(input('Valor do cateto oposto(0 se não souber): '))
+cA = float(input('Valor do catetor adjacente(0 se não souber): '))
+h = float(input('valor da hipotenusa(0 se não souber): '))
+#h**2 = c**1 + c**2
+
+#Hipotenusa
+h2 = math.sqrt(cO ** 2 + cA ** 2)
+if h == 0:
+     print(f'O valor de hipotenusa é: {h2}')
+
+#Cateto oposto
+cO2 = math.sqrt(h ** 2 - cA ** 2)
+if cO == 0:
+    print(f'O valor do cateto oposto pe: {cO2}')
+
+#Cateto adjacente
+cA2 = math.sqrt(h ** 2 - cO ** 2)
+if cA == 0:
+    print(f'O valor do cateto adjacente é: {cA2}')

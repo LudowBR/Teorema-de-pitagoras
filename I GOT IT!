@@ -1,0 +1,20 @@
+#Esse código não tem mais erro de syntax! O problema estava no uso do IF, ELIF e ELSE! Usando dois ELIF na última eu consigo ter uma condição especifica para uma parte do problemas (sla se deu pra entender)
+# Demorei pra encontrar pois não estava trabalhando nele. Estou fazend um curso de Salesforce, e to vendo bastante coisa sobre o assunto.
+
+import math
+cO = float(input('Valor do cateto oposto(0 se não souber): '))
+cA = float(input('Valor do cateto adjacente(0 se não souber): '))
+h = float(input('valor da hipotenusa(0 se não souber): '))
+
+#Hipotenusa
+if h == 0:
+    h2 = math.sqrt(cO ** 2 + cA ** 2)
+    print(f'O valor de hipotenusa é: {h2}')
+#Cateto oposto
+elif cO == 0:
+    cO2 = math.sqrt(h ** 2 - cA ** 2)
+    print(f'O valor do cateto oposto pe: {cO2}')
+#Cateto adjacente
+elif cA == 0:
+    cA2 = math.sqrt(h ** 2 - cO ** 2)
+    print(f'O valor do cateto adjacente é: {cA2}')
